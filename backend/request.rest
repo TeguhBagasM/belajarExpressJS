@@ -1,0 +1,58 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/users/1
+
+###
+GET http://localhost:5000/products/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Bagas",
+    "email": "bagas21@gmail.com",
+    "gender": "Male"
+}
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Cargo Pants",
+    "description": "Limited Edition",
+    "category": "Pants",
+    "price": "300000"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Teguh",
+    "email": "teguh21@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/products/2
+Content-Type: application/json
+
+{
+    "name": "Levis",
+    "description": "Limited Edition",
+    "category": "Pants",
+    "price": "250000"
+}
+
+###
+DELETE http://localhost:5000/users/2
+
+###
+DELETE http://localhost:5000/products/2
